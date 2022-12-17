@@ -1,6 +1,6 @@
 {
   "name": "wmic-get",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WMIC get value",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

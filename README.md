@@ -20,6 +20,8 @@ console.log(cpuName)
 ### list(section)
 Return an array of values from `wmic` like Memory info.
 ```js
+import { list } from 'wmic-get';
+
 // equivalent to ' wmic MEMPHYSICAL get'
 const mem = list('MEMPHYSICAL');
 console.log(mem)
@@ -41,6 +43,8 @@ console.log(mem)
 ### get(section, attributeName | [attributesList])
 Return an array of values from `wmic` with input attribute/s.
 ```js
+import { get } from 'wmic-get';
+
 // equivalent to ' wmic os get Name,OSType'
 const os = get('OS',['Name','OSType']);
 console.log(os)
@@ -54,6 +58,8 @@ console.log(os)
 ### getValue(section, attributeName)
 Return value of specific attributes from `wmic`.
 ```js
+import { getValue } from 'wmic-get'
+;
 // equivalent to ' wmic cpu get Manufacturer'
 const cpuMF = getValue('CPU','Manufacturer');
 console.log(cpuMF)
